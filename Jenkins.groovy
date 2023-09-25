@@ -33,6 +33,13 @@ pipeline {
                 // Ideally the security scan steps would be added here
             }
         }
+         stage('Security Scan 2') {
+            steps {
+                echo 'Stage 4: Security Scan - perform a security scan on the code (e.g., OWASP ZAP)'
+                echo 'Tool: OWASP ZAP'
+                // Ideally the security scan steps would be added here
+            }
+        }
         
         stage('Deploy to Staging') {
             steps {
